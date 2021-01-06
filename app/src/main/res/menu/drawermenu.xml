@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/main" android:title="@string/main" android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/phone" android:title="@string/phone" android:icon="@drawable/ic_smartphone"/>
+    <item android:id="@+id/laptop" android:title="@string/laptop" android:icon="@drawable/ic_laptop"/>
+    <item android:id="@+id/headphone" android:title="@string/headphone" android:icon="@drawable/ic_headphone"/>
+    <item android:id="@+id/contact" android:title="@string/contact" android:icon="@drawable/ic_contact"/>
+</menu>

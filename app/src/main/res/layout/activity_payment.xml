@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.PaymentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <TextView
+            android:id="@+id/txtShow"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Giỏ hàng trống"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <androidx.recyclerview.widget.RecyclerView
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recycleViewPayment"
+            tools:listitem="@layout/list_payment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"/>
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtTotal"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:text="Total: "
+            android:textColor="#f20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/custom_button"
+            android:textColor="#40034A"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnPayment"
+            android:layout_below="@+id/txtTotal"
+            android:text="Thanh toán"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/custom_button"
+            android:textColor="#40034A"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/btnPayment"
+            android:id="@+id/btnContinue"
+            android:text="Tiếp tục mua hàng"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

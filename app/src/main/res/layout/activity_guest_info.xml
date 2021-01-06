@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:context=".view.GuestInfoActivity">
+    <RelativeLayout
+        android:background="#F8F4F4"
+        android:layout_centerInParent="true"
+        android:layout_width="350dp"
+        android:layout_height="500dp">
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="Thông tin khách hàng"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:hint="Nhập tên"
+            android:layout_below="@id/txtInfo"
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:hint="Nhập số điện thoại"
+            android:layout_below="@id/edtName"
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:hint="Nhập email"
+            android:layout_below="@id/edtPhone"
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/custom_button"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/edtEmail"
+            android:id="@+id/btnConfirm"
+            android:text="Xác nhận"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:background="@drawable/custom_button"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edtEmail"
+            android:id="@+id/btnBack"
+            android:text="Trở về"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

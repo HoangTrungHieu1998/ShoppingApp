@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:id="@+id/txtDialog"
+        android:textColor="#046A05"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:text="Vui lòng nhập số lượng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="number"
+        android:maxLength="2"
+        android:hint="Nhập số lượng"
+        android:id="@+id/edtNumber"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<!--    <Button-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:text="Xác nhận"-->
+<!--        android:id="@+id/btnConfirm"-->
+<!--        android:layout_below="@+id/edtNumber"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <Button-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:text="Thoát"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:id="@+id/btnExit"-->
+<!--        android:layout_below="@+id/edtNumber"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+
+</RelativeLayout>
